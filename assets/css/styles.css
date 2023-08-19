@@ -1,0 +1,13 @@
+:root{
+    --color-blue:#336699
+}
+
+
+body{ 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.icon{
+    width: auto;
+    height: auto;
+}
