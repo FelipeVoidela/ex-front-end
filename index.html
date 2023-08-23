@@ -18,46 +18,81 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="container mt-4"> 
+        <nav class="navbar navbar-expand-lg"> <!--navbar-expand-lg-Sem começa com sanduiche-->
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Exercício Boostrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand logo-menu" href="#">Exercício Boostrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-text-right"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"><!--ms-auto esta fazendo todos o itens irem para a direita-->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Features</a>
+                            <a class="nav-link" href="#">Features</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Download</a>
                         </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary"><i class="bi bi-chat-dots-fill"></i>Fazer Login</button> 
+                        </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-primary btn-outline-light border border-primary" type="submit"><i class="bi bi-chat-dots-fill"></i>Fazer login</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container mb-4"> <!--mg-botton-4--> 
-        <article class="row p-5 d-flex align-items-center">
-            <section class="col-md-6 my-3">
-                <h1 class="display-1 text-blue">Lorem, ipsum dolor.</h1>
-                <p class="lead my-4 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. In iure at deserunt architecto, delectus laudantium.</p>
-            </section>
-            <figure class="icon align-items-center img-fluid">
-                <img src="./assets/img/AppStore.png" alt="AppStore">
-                <img src="./assets/img/GooglePlay.png" alt="GooglePlay">
-            </figure>
-            <figure class="col-md-6 my-3">
-                <img src="assets/img/phone-amico.svg" alt="Imagem de cell" class="img-fluid">
-            </figure>
-        </article>
-
+    <main class="container-fluid">
+        <div class="container">
+            <article class="row d-flex align-items-center justify-content-center">
+                <section class="col-md-6 my-3">
+                    <h1 class="display-1 text-black">Lorem, ipsum dolor.</h1>
+                    <p class= "lead my-4 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aspernatur, sequi tenetur dolore fugit amet.</p>
+                    <img src="./assets/img/app-store-badge.svg" alt="AppStore" class="img-fluid col-4">
+                    <img src="./assets/img/google-play-badge.svg" alt="GooglePlay" class="img-flui col-4">
+                </section>
+                <figure class="col-md-6 my-3">
+                    <img src="./assets/img/phone-amico.svg" alt="phone" class="img-fluid">
+                </figure>
+            </article>
+        </div>
+        <div class="row d-flex align-items-center">
+            <article class="bg-primary">
+                <h2 class="text-center text-light my-5 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur minima laudantium?</h2>
+            </article>
+            <div class="container container-fluid">
+                <article class="row d-flex align-items-center justify-content-center">
+                    <section class="col-md-6 my-3">
+                        <img src="./assets/img/phone-amico.svg" alt="phone" class="img-fluid">
+                    </section>
+                    <figure class="col-md-6 my-5">
+                        <div class="row text-center">
+                            <div class="col-md-5">
+                                <i class="bi bi-phone fs-1"></i>
+                                <h3>Lorem, ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum?</p>
+                            </div>
+                            <div class="col-md-5">
+                                <i class="bi bi-camera fs-1"></i>
+                                <h3>Lorem, ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum?</p>
+                            </div>
+                            <div class="col-md-5">
+                                <i class="bi bi-gift fs-1"></i>
+                                <h3>Lorem, ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum?</p>
+                            </div>
+                            <div class="col-md-5">
+                                <i class="bi bi-patch-check fs-1"></i>
+                                <h3>Lorem, ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum?</p>
+                            </div>
+                        </div>
+                    </figure>
+                </article>
+            </div>
+            
+    </main>
 
 
     <!--chamando o js do BS-->

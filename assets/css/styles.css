@@ -7,7 +7,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.icon{
-    width: auto;
-    height: auto;
+.container{
+    width: 100%;
 }
